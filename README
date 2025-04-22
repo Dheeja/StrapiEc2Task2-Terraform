@@ -22,3 +22,8 @@ curl http://<EC2-Public-IP>:1337/
 🔄 Cleanup
 To remove AWS resources when no longer needed, use Terraform’s destroy command:
 terraform destroy -auto-approve
+
+
+LOOM Link : https://www.loom.com/share/5be84026a6084d8696c60bb9cf67f68d?sid=bec25d94-e7c0-4be7-9ae1-03845b6880d0
+
+PR Link : https://github.com/PearlThoughts-DevOps-Internship/strapi--Monitor-hub/tree/JagaHorcrux-Task2
