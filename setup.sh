@@ -14,17 +14,6 @@ cd /home/ec2-user
 git clone https://github.com/Dheeja/Strapi-Task2-deploytoEC2Dock.git
 cd Strapi-Task2-deploytoEC2Dock/strapi-app
 
-# Create .env file
-cat <<EOF > .env
-HOST=0.0.0.0
-PORT=1337
-APP_KEYS=someAppKey
-API_TOKEN_SALT=someSalt
-ADMIN_JWT_SECRET=someSecret
-JWT_SECRET=someJWTSecret
-EOF
-
-
 # Install dependencies
 yarn install
 
