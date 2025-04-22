@@ -1,51 +1,24 @@
-Strapi Deployment on AWS EC2 Using Terraform 
-
+Strapi Deployment on AWS EC2 Using Terraform
 📌 Introduction
-
 This guide explains how to deploy a Strapi CMS on an AWS EC2 instance using Terraform. We will provision the infrastructure, install Strapi, and access the admin panel.
-
 🛠 Prerequisites
-
 Before you begin, ensure you have the following installed:
-
-- Terraform (>= 1.0.0)
-- AWS CLI (>= 2.0)
-- An AWS account with IAM permissions
-- SSH key pair (for EC2 login)
-
+•	- Terraform (>= 1.0.0)
+•	- AWS CLI (>= 2.0)
+•	- An AWS account with IAM permissions
+•	- SSH key pair (for EC2 login)
 ⚙️ Deployment Steps
-
-- Initialize Terraform – This sets up your working directory for Terraform usage.
-- Apply Terraform Configuration – Terraform provisions an EC2 instance with the required dependencies.
-- Access EC2 via SSH – Log into the server using an SSH key to manage Strapi installation.
-- Install Strapi – Install Node.js and Strapi on the EC2 instance.
-- Run Strapi Server – Start Strapi and expose the admin panel for configuration.
-- Access the Dashboard – Open http://<EC2-Public-IP>:1337/admin to manage content.
-
-
+1.	Initialize Terraform – This sets up your working directory for Terraform usage.
+2.	Apply Terraform Configuration – Terraform provisions an EC2 instance with the required dependencies.
+3.	Access EC2 via SSH – Log into the server using an SSH key to manage Strapi installation.
+4.	Install Strapi – Install Node.js and Strapi on the EC2 instance.
+5.	Run Strapi Server – Start Strapi and expose the admin panel for configuration.
+6.	Access the Dashboard – Open http://<EC2-Public-IP>:1337/admin to manage content.
 🎯 Verifying Deployment
-
 Once deployed, test the setup by visiting:
-
 👉 http://<EC2-Public-IP>:1337/admin
-
 To ensure Strapi is running, you can also check:
-
 curl http://<EC2-Public-IP>:1337/
-
 🔄 Cleanup
-
-To remove AWS resources when no longer needed, use 
-
-Terraform’s destroy command:
-
+To remove AWS resources when no longer needed, use Terraform’s destroy command:
 terraform destroy -auto-approve
-
-
-
-
-
-
-
-
-
