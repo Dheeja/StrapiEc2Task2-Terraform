@@ -11,8 +11,8 @@ npm install -g yarn
 cd /home/ec2-user
 
 # Clone the repository
-git clone https://github.com/Dheeja/Strapi-Task2-deploytoEC2Dock.git
-cd Strapi-Task2-deploytoEC2Dock/strapi-app
+git clone https://github.com/Dheeja/Strapi-Task1.git
+cd Strapi-Task1/strapi-app
 
 # Install dependencies
 yarn install
